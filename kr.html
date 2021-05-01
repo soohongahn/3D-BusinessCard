@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>명함</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">3D 명함</div>
+      <div class="box">
+        <div class="box-side front">
+          <div class="depth">
+            <h1>안수홍</h1>
+            <p>프론트엔드 개발자</p>
+          </div>
+        </div>
+        <div class="box-side back">
+          <div class="depth">
+            <h3>연락처</h3>
+            <p><strong>이메일</strong> seanahn100@gmail.com</p>
+            <p><strong>전화</strong> (+82)10-3892-3116</p>
+            <p><strong>포트폴리오</strong> www.ahn70.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="kr-btn" onclick="location.href='index.html';">English</div>
+    </div>
+    <script>
+      var box = document.querySelector('.box');
+      box.addEventListener('click', function(){
+        document.body.classList.toggle('flip');
+      })
+    </script>
+  </body>
+</html>
